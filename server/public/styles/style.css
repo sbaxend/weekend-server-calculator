@@ -18,9 +18,9 @@ body {
   }
   
   input[type="number"], select {
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin: 0.5em;
+    font-size: 20px;
+    padding: 8px;
+    margin: 8px;
     width: 100px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -39,7 +39,7 @@ body {
   
   #results {
     text-align: center;
-    margin: 1em 0;
+    margin: 16px 0;
   }
   
   #results h1 {
