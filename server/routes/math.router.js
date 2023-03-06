@@ -4,9 +4,10 @@ const routerMath = express.Router();
 
 let mathList = [
     {   
-        // Variable1: 8,
-        // Operator: "+" ,
-        // Variable2: 4,
+        Variable1: 8,
+        Operator: "+" ,
+        Variable2: 4,
+        Answer: 12
     }
 ]
 
@@ -17,11 +18,11 @@ routerMath.get('/', (req, res) => {
 //stays on bottom
 module.exports = routerMath;
 
+let answer = 0;
 routerMath.post('/', (req, res) => {
     console.log('POST request for /math');
     console.log(req.body);
     const {Variable1, Operator, Variable2} = req.body;
-    let answer = 0;
     if (Operator === "+") {
         answer = parseInt(Variable1) + parseInt(Variable2);
     } else if (Operator === "-"){
@@ -38,11 +39,13 @@ routerMath.post('/', (req, res) => {
         Answer: answer
 
     })
-    res.send(answer)
+    console.log(mathList)
     res.sendStatus(201)
+    res.send({answer})
 
 })
 
-routerMath.post('/', (req, res) => {
-    let solving = req.body
-})
+// routerMath.get('/', (req, res) => {
+//     console.log("GET request for /answer")
+//     res.send({answer})
+// })

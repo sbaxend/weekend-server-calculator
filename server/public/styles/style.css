@@ -1,0 +1,60 @@
+/* set the font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+  }
+  
+  input[type="number"], select {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"], button {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    
+  }
+  
+  input[type="submit"]:hover, button:hover {
+    background-color:  #47dfd8;
+  }
+  
+  #results {
+    text-align: center;
+    margin: 1em 0;
+  }
+  
+  #results h1 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+  
+  #display {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    
+  }
+  
