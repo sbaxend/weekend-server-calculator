@@ -9,16 +9,21 @@
 </head>
 <body>
     <header>Calculator</header>
-    <form onSubmit="">
-        <input type="number">
-        <button>+</button>
-        <button>-</button>
-        <button>x</button>
-        <button>%</button>
-        <input type ="number">
-        <button type="submit" >Calculate</button>
-        <button>Clear</button>
+    <form onSubmit="submitProblem(event)">
+        <input type="number" id="number1">
+    <select id ="operation" required>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+        <input type ="number" id="number2">
+        <input type="submit" value="Calculate" />
     </form>
+    <button onClick="clearProblem()">Clear</button>
+    <div id="results">
+
+    </div>
     <div id ="content">
 
 

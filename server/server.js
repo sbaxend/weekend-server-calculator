@@ -6,7 +6,6 @@ const port = process.env.PORT || 5001;
 
 const mathRouter = require('./routes/math.router.js');
 
-
 app.use(express.json());
 
 app.use('/math', mathRouter);
